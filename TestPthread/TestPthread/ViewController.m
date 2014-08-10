@@ -18,6 +18,11 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    self.imageView=[[UIImageView alloc]initWithFrame:self.view.bounds];
+    
+    [self.view addSubview:_imageView];
+    
+    self.imageView.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://news.ifeng.com/coop/20140810/41516951_0.shtml#p=2"]]];
 }
 
 - (void)didReceiveMemoryWarning
