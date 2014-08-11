@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#include <pthread.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController{
+    pthread_t m_pid;
+    pthread_attr_t attr;
+}
 @property (nonatomic,strong)UIImageView * imageView;
 @end
