@@ -28,6 +28,22 @@
 		512EA8B51999BE630043D890 /* TestJsoncpp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TestJsoncpp; sourceTree = BUILT_PRODUCTS_DIR; };
 		512EA8B81999BE630043D890 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		512EA8BA1999BE640043D890 /* TestJsoncpp.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = TestJsoncpp.1; sourceTree = "<group>"; };
+		512EA8D91999BF6D0043D890 /* autolink.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = autolink.h; sourceTree = "<group>"; };
+		512EA8DA1999BF6D0043D890 /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		512EA8DB1999BF6D0043D890 /* features.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = features.h; sourceTree = "<group>"; };
+		512EA8DC1999BF6D0043D890 /* forwards.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = forwards.h; sourceTree = "<group>"; };
+		512EA8DD1999BF6D0043D890 /* json.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = json.h; sourceTree = "<group>"; };
+		512EA8DE1999BF6D0043D890 /* reader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = reader.h; sourceTree = "<group>"; };
+		512EA8DF1999BF6D0043D890 /* value.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = value.h; sourceTree = "<group>"; };
+		512EA8E01999BF6D0043D890 /* writer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = writer.h; sourceTree = "<group>"; };
+		512EA8E21999BF6D0043D890 /* json_batchallocator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = json_batchallocator.h; sourceTree = "<group>"; };
+		512EA8E31999BF6D0043D890 /* json_internalarray.inl */ = {isa = PBXFileReference; lastKnownFileType = text; path = json_internalarray.inl; sourceTree = "<group>"; };
+		512EA8E41999BF6D0043D890 /* json_internalmap.inl */ = {isa = PBXFileReference; lastKnownFileType = text; path = json_internalmap.inl; sourceTree = "<group>"; };
+		512EA8E51999BF6D0043D890 /* json_reader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = json_reader.cpp; sourceTree = "<group>"; };
+		512EA8E61999BF6D0043D890 /* json_value.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = json_value.cpp; sourceTree = "<group>"; };
+		512EA8E71999BF6D0043D890 /* json_valueiterator.inl */ = {isa = PBXFileReference; lastKnownFileType = text; path = json_valueiterator.inl; sourceTree = "<group>"; };
+		512EA8E81999BF6D0043D890 /* json_writer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = json_writer.cpp; sourceTree = "<group>"; };
+		512EA8E91999BF6D0043D890 /* sconscript */ = {isa = PBXFileReference; lastKnownFileType = text; path = sconscript; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,10 +76,50 @@
 		512EA8B71999BE630043D890 /* TestJsoncpp */ = {
 			isa = PBXGroup;
 			children = (
+				512EA8D71999BF6D0043D890 /* jsoncpp */,
 				512EA8B81999BE630043D890 /* main.cpp */,
 				512EA8BA1999BE640043D890 /* TestJsoncpp.1 */,
 			);
 			path = TestJsoncpp;
+			sourceTree = "<group>";
+		};
+		512EA8D71999BF6D0043D890 /* jsoncpp */ = {
+			isa = PBXGroup;
+			children = (
+				512EA8D81999BF6D0043D890 /* json */,
+				512EA8E11999BF6D0043D890 /* lib_json */,
+			);
+			path = jsoncpp;
+			sourceTree = "<group>";
+		};
+		512EA8D81999BF6D0043D890 /* json */ = {
+			isa = PBXGroup;
+			children = (
+				512EA8D91999BF6D0043D890 /* autolink.h */,
+				512EA8DA1999BF6D0043D890 /* config.h */,
+				512EA8DB1999BF6D0043D890 /* features.h */,
+				512EA8DC1999BF6D0043D890 /* forwards.h */,
+				512EA8DD1999BF6D0043D890 /* json.h */,
+				512EA8DE1999BF6D0043D890 /* reader.h */,
+				512EA8DF1999BF6D0043D890 /* value.h */,
+				512EA8E01999BF6D0043D890 /* writer.h */,
+			);
+			path = json;
+			sourceTree = "<group>";
+		};
+		512EA8E11999BF6D0043D890 /* lib_json */ = {
+			isa = PBXGroup;
+			children = (
+				512EA8E21999BF6D0043D890 /* json_batchallocator.h */,
+				512EA8E31999BF6D0043D890 /* json_internalarray.inl */,
+				512EA8E41999BF6D0043D890 /* json_internalmap.inl */,
+				512EA8E51999BF6D0043D890 /* json_reader.cpp */,
+				512EA8E61999BF6D0043D890 /* json_value.cpp */,
+				512EA8E71999BF6D0043D890 /* json_valueiterator.inl */,
+				512EA8E81999BF6D0043D890 /* json_writer.cpp */,
+				512EA8E91999BF6D0043D890 /* sconscript */,
+			);
+			path = lib_json;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

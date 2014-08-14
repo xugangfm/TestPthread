@@ -21,6 +21,8 @@
 		512EA91B199C5BC70043D890 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 512EA8FD199C5BC70043D890 /* UIKit.framework */; };
 		512EA923199C5BC70043D890 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 512EA921199C5BC70043D890 /* InfoPlist.strings */; };
 		512EA925199C5BC70043D890 /* AsyncSocketClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 512EA924199C5BC70043D890 /* AsyncSocketClientTests.m */; };
+		512EA932199C65350043D890 /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 512EA92F199C65350043D890 /* AsyncSocket.m */; };
+		512EA933199C65350043D890 /* AsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 512EA931199C65350043D890 /* AsyncUdpSocket.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		512EA920199C5BC70043D890 /* AsyncSocketClientTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AsyncSocketClientTests-Info.plist"; sourceTree = "<group>"; };
 		512EA922199C5BC70043D890 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		512EA924199C5BC70043D890 /* AsyncSocketClientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AsyncSocketClientTests.m; sourceTree = "<group>"; };
+		512EA92E199C65350043D890 /* AsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncSocket.h; sourceTree = "<group>"; };
+		512EA92F199C65350043D890 /* AsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncSocket.m; sourceTree = "<group>"; };
+		512EA930199C65350043D890 /* AsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncUdpSocket.h; sourceTree = "<group>"; };
+		512EA931199C65350043D890 /* AsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncUdpSocket.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +118,10 @@
 		512EA8FF199C5BC70043D890 /* AsyncSocketClient */ = {
 			isa = PBXGroup;
 			children = (
+				512EA92E199C65350043D890 /* AsyncSocket.h */,
+				512EA92F199C65350043D890 /* AsyncSocket.m */,
+				512EA930199C65350043D890 /* AsyncUdpSocket.h */,
+				512EA931199C65350043D890 /* AsyncUdpSocket.m */,
 				512EA908199C5BC70043D890 /* AppDelegate.h */,
 				512EA909199C5BC70043D890 /* AppDelegate.m */,
 				512EA90B199C5BC70043D890 /* Main.storyboard */,
@@ -250,8 +260,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				512EA910199C5BC70043D890 /* ViewController.m in Sources */,
+				512EA933199C65350043D890 /* AsyncUdpSocket.m in Sources */,
 				512EA90A199C5BC70043D890 /* AppDelegate.m in Sources */,
 				512EA906199C5BC70043D890 /* main.m in Sources */,
+				512EA932199C65350043D890 /* AsyncSocket.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
