@@ -23,13 +23,19 @@
     
     NSError *err = nil;
     
-    if(![__asyncSocket connectToHost:@"" onPort:8888 error:&err ])
+    if(![__asyncSocket connectToHost:@"192.168.1.100" onPort:8083 error:&err ])
         
     {
         
         NSLog(@"Error: %@", err);
         
     }
+    
+    [__asyncSocket readDataWithTimeout:-1 tag:1];
+    
+    self.textView.editable = NO;
+    
+    self.textView.text = @"";
 }
 
 - (void)didReceiveMemoryWarning
@@ -45,6 +51,8 @@
     if (text.length > 0) {
         [__asyncSocket writeData:[text dataUsingEncoding:NSUTF8StringEncoding] withTimeout:60 tag:1];
     }
+    
+    self.textField.text =@"";
     
 }
 
@@ -63,6 +71,12 @@
     NSString* aStr = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
     
     NSLog(@"===%@",aStr);
+    
+    self.textView.text = [NSString stringWithFormat:@"%@\n%@\n",self.textView.text,aStr];
+    
+    [sock readDataWithTimeout:-1 tag:1];
 }
+
+
 
 @end
