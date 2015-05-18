@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		51060A8E1B0984ED00D635E0 /* XGThread.mm in Sources */ = {isa = PBXBuildFile; fileRef = 51060A8C1B0984ED00D635E0 /* XGThread.mm */; };
+		51060A911B098CA700D635E0 /* DownloadPictureThread.mm in Sources */ = {isa = PBXBuildFile; fileRef = 51060A8F1B098CA700D635E0 /* DownloadPictureThread.mm */; };
+		51060A951B09BA9900D635E0 /* XGMutex.mm in Sources */ = {isa = PBXBuildFile; fileRef = 51060A931B09BA9900D635E0 /* XGMutex.mm */; };
 		512EA8771997F5440043D890 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 512EA8761997F5440043D890 /* Foundation.framework */; };
 		512EA8791997F5440043D890 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 512EA8781997F5440043D890 /* CoreGraphics.framework */; };
 		512EA87B1997F5440043D890 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 512EA87A1997F5440043D890 /* UIKit.framework */; };
@@ -34,6 +37,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		51060A8C1B0984ED00D635E0 /* XGThread.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = XGThread.mm; sourceTree = "<group>"; };
+		51060A8D1B0984ED00D635E0 /* XGThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGThread.h; sourceTree = "<group>"; };
+		51060A8F1B098CA700D635E0 /* DownloadPictureThread.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DownloadPictureThread.mm; sourceTree = "<group>"; };
+		51060A901B098CA700D635E0 /* DownloadPictureThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadPictureThread.h; sourceTree = "<group>"; };
+		51060A931B09BA9900D635E0 /* XGMutex.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = XGMutex.mm; sourceTree = "<group>"; };
+		51060A941B09BA9900D635E0 /* XGMutex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGMutex.h; sourceTree = "<group>"; };
 		512EA8731997F5440043D890 /* TestPthread.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestPthread.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		512EA8761997F5440043D890 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		512EA8781997F5440043D890 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -117,6 +126,12 @@
 				512EA8881997F5440043D890 /* Main.storyboard */,
 				512EA88B1997F5440043D890 /* ViewController.h */,
 				512EA88C1997F5440043D890 /* ViewController.mm */,
+				51060A8F1B098CA700D635E0 /* DownloadPictureThread.mm */,
+				51060A901B098CA700D635E0 /* DownloadPictureThread.h */,
+				51060A8C1B0984ED00D635E0 /* XGThread.mm */,
+				51060A8D1B0984ED00D635E0 /* XGThread.h */,
+				51060A931B09BA9900D635E0 /* XGMutex.mm */,
+				51060A941B09BA9900D635E0 /* XGMutex.h */,
 				512EA88E1997F5440043D890 /* Images.xcassets */,
 				512EA87D1997F5440043D890 /* Supporting Files */,
 			);
@@ -249,8 +264,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51060A8E1B0984ED00D635E0 /* XGThread.mm in Sources */,
 				512EA88D1997F5440043D890 /* ViewController.mm in Sources */,
+				51060A951B09BA9900D635E0 /* XGMutex.mm in Sources */,
 				512EA8871997F5440043D890 /* AppDelegate.m in Sources */,
+				51060A911B098CA700D635E0 /* DownloadPictureThread.mm in Sources */,
 				512EA8831997F5440043D890 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
